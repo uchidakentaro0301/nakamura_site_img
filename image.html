@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本地図</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://unpkg.com/japan-map-js@1.0.1/dist/jpmap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+</head>
+<body>
+  <div id="my-map"></div>
+  
+  <!-- 拡大表示用の要素 -->
+  <div id="zoom-container" class="zoom-container">
+    <div class="zoom-content">
+      <span id="close-zoom" class="close">&times;</span>
+      <h2 id="zoom-title"></h2>
+      <p id="zoom-description"></p>
+      <a id="zoom-link" href="#" target="_blank">詳細はこちら</a>
+    </div>
+  </div>
+
+  <script src="action.js" defer></script>
+</body>
+</html>
+

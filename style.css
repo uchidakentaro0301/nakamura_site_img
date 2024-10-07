@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#my-map {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.zoom-container {
+  display: none;
+  position: fixed;
+  left: 700px;
+  top: 300px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.zoom-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  transform: scale(1); /* 拡大倍率を1に設定 */
+  transition: transform 0.3s ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#zoom-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#zoom-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#zoom-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#zoom-link:hover {
+  background-color: #0056b3;
+}
